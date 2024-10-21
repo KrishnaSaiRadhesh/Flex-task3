@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-task3</title>
+    <style>
+        .flex-container{
+            display: flex;
+            /* height: 30vh;
+            width: 80vh; */
+            border: 2px solid;
+        }
+
+        .child1{
+            display: flex;
+            background-color: aqua;
+            height: 20vh;
+            width: 300px;
+            flex-shrink: 1;
+            align-items: center;
+            justify-content: center;
+        }
+
+        
+        .child2{
+            display: flex;
+            background-color: red;
+            height: 20vh;
+            width: 350px;
+            flex-shrink: 2;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .child3{
+            display: flex;
+            background-color: orange;
+            height: 20vh;
+            width: 400px;
+            flex-shrink: 3;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .child4{
+            display: flex;
+            background-color: green;
+            height: 20vh;
+            width: 450px;
+            flex-shrink: 4;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="child1">Child 1 (wider)</div>
+        <div class="child2">Child 2</div>
+        <div class="child3">Child 3</div>
+        <div class="child4">Child 4</div>
+      </div>
+
+      <p>Here Child 4 will shrink first</p>
+</body>
+</html>
